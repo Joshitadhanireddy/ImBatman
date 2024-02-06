@@ -1,0 +1,296 @@
+body{
+    background-color:white;
+    font-family:'Arial';
+    font-weight: bold;
+}
+
+button{
+    background:transparent;
+    border:none;
+}
+
+#buttonimage{
+    width:10%;
+    height:auto;
+    float: left;
+}
+
+.dark-mode button{
+    background: transparent;
+    border:none;
+}
+
+.dark-mode
+{
+    background-color:black;
+    color:white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+    position: fixed;
+}
+
+li{
+    float:left;
+    margin-right: 2%;
+    padding:1%;
+    font-size: 140%;
+}
+
+li a{
+    display: block;
+    color:black;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dark-mode li a{
+    color:white;
+    background-color: transparent;
+}
+
+li a:hover{
+    color:#495057;
+}
+
+.dark-mode li a:hover{
+    color:#adb5bd;
+}
+
+li.activepage a {
+    color:#495057;
+}
+
+.dark-mode li.activepage a {
+    color:#adb5bd;
+}
+
+h1{
+    font-size:300%;
+}
+p{
+    color:#495057;
+    font-size:200%;
+}
+
+.dark-mode p{
+    color:#adb5bd;
+}
+.mypicture{
+    max-width:40%;
+    height:auto;
+    float:right;
+    margin-right:4%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.resume{
+    text-decoration: none;
+    color:black;
+}
+
+.dark-mode .resume{
+    color:white;
+}
+.resume:hover{
+    color:#495057;
+}
+.dark-mode .resume:hover{
+    color:#adb5bd;
+}
+
+pre{
+    font-size: 200%;
+    font-family:'Arial';
+    color:#495057;
+}
+
+.dark-mode pre{
+    color:#adb5bd;
+}
+
+footer{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+footer a{
+    width: 10%;
+    height:auto;
+}
+
+.commenthead{
+    font-size:150%;
+}
+
+.comments{
+    font-size:50%;
+}
+#likeCount2{
+    font-size:100%;
+}
+#likeCount1{
+    font-size:100%;
+}
+.likes img {
+    width: 2%;
+    height: auto;
+}
+@keyframes movement{
+    from{
+        transform: translatey(300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.blogheading{
+    font-size:200%;
+}
+.blogcontent{
+    font-size:150%;
+}
+.myname{
+    float:right;
+    animation-name: movement;
+    animation-duration: 1s;
+}
+
+.other{
+    float:right;
+}
+
+.blog-container {
+    display: inline-block;
+    margin: 100px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius:10%;
+}
+
+.dark-mode .blog-container{
+    background-color: rgba(255, 255, 255, 0.236);
+}
+
+.blogbutton {
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 150px;
+    height: 150px;
+    border-radius:50px;
+}
+.dark-mode .blogbutton{
+    color:white;
+}
+
+.blog-container:hover .blogbutton {
+    color:#495057;
+    transform: translateY(-5px); 
+}
+
+.dark-mode .blog-container:hover .blogbutton {
+    color:#adb5bd;
+}
+footer a img {
+    width: 40px;
+    height: auto;
+}
+
+footer button img{
+    width: 40px;
+    height: auto;
+}
+
+@media (max-width:480px){
+    
+    #buttonimage{
+        width:7%;
+        height:auto;
+    }
+
+    li{
+        margin-right: 1%;
+        padding:1%;
+        font-size: 60%;
+    }
+    
+    h1{
+        font-size:150%;
+    }
+
+    .likes img {
+        width: 6%;
+        height: auto;
+    }
+
+    .myname{
+        padding-right: 10px;
+    }
+    
+    .other{
+        padding-right: 10px;
+    }
+    
+    .blog-container {
+        display: inline-block;
+        margin-left:100px;
+        margin-right:10px;
+        margin-bottom:10px;
+        margin-top:20px;
+        width:200px;
+        height:200px;
+        text-align: center;
+        border-radius:50%;
+    }
+    
+    .blogbutton {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer a img {
+        width: 40px;
+        height: auto;
+    }
+    
+    footer button img{
+        width: 40px;
+        height: auto;
+    }
+    h1{
+        font-size:200%;
+    }
+    p{
+        color:#495057;
+        font-size:80%;
+    }
+    .mypicture{
+        margin-top:18%;
+    }
+    pre{
+        font-size: 100%;
+    }
+    .blogheading{
+        font-size:120%;
+    }
+    .blogcontent{
+        font-size:80%;
+    }
+    .commenthead{
+        font-size:100%;
+    }
+    
+    .comments{
+        font-size:80%;
+    }
+    #likeCount2{
+        font-size:80%;
+    }
+    #likeCount1{
+        font-size:80%;
+    }
+}
